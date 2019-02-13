@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+read -r -d '' applescriptCode <<'EOF'
+   set dialogText to text returned of (display dialog "Enter password for your computer" default answer "")
+   return dialogText
+EOF
+
+dialogText=$(osascript -e "$applescriptCode");
+
+echo $dialogText;
+
+fdesetup -usertoadd $USER -inputplist $dialogText;

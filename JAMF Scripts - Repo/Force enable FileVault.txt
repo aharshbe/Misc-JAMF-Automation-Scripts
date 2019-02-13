@@ -1,0 +1,19 @@
+fdesetup enable
+
+curl -o /tmp/octocat.png -k https://assets-cdn.github.com/images/modules/logos_page/Octocat.png 2>/dev/null
+
+
+description="Your computer will restart in 1 minute in order to enable FileVault. 
+
+FileVault protects and encrypts your data."
+
+
+button="Ok"
+
+dir="/Library/Application Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper"
+window=" -windowType utility -title GitHub IT -icon /tmp/octocat.png"
+"$dir" $window -description "$description" -button1 $button
+
+rm -rf /tmp/octocat.png
+
+shutdown -r +1

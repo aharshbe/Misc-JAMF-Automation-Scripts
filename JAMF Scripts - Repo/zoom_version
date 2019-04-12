@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="updates-from-bookmarks-browser-notification" content=""/>
+		<meta name="at-mentioned-browser-notification" content=""/>
+		<meta name="user-logged-in" content="false"/>
+		<meta name="user-logged-in-id" content=""/>
+		<meta name="user-logged-in-is-jamf" content=""/>
+	    <title>
+			Zoom | Jamf Nation
+		</title>
+		
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+    
+	    
+	    <link href="https://www.jamf.com/jamf-nation/css/jamfnation.min.css?v=201904101859" rel="stylesheet">
+	    
+	    
+		<script src="https://www.jamf.com/jamf-nation/js/jamfnation.min.js?v=201904101859" type="text/javascript"></script>
+		<script>
+			var loggedInId = $("meta[name='user-logged-in-id']").attr("content");
+			if (loggedInId)  {
+				var isJamf = $("meta[name='user-logged-in-is-jamf']").attr("content") === "true";
+				(function(apiKey){
+					(function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+						v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+							o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+						y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+						z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+					// Call this whenever information about your visitors becomes available
+					// Please use Strings, Numbers, or Bools for value types.
+					pendo.initialize({
+						visitor: {
+							id: loggedInId,
+							isJamf: isJamf
+
+						},
+						account: {id: 'jamf-nation'}
+					});
+				})('d177d981-f44a-4c5b-70a7-3fd18a3711d9');
+			}
+
+		</script>
+		
+		<link rel="icon" sizes="192x192" href='https://www.jamf.com/touch-icon-192x192.png'>
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href='https://www.jamf.com/apple-touch-icon-180x180.png'>
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href='https://www.jamf.com/apple-touch-icon-152x152.png'>
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href='https://www.jamf.com/apple-touch-icon-144x144.png'>
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href='https://www.jamf.com/apple-touch-icon-120x120.png'>
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href='https://www.jamf.com/apple-touch-icon-114x114.png'>
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href='https://www.jamf.com/apple-touch-icon-76x76.png'>
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href='https://www.jamf.com/apple-touch-icon-72x72.png'>
+		<link rel="apple-touch-icon-precomposed" href='https://www.jamf.com/apple-touch-icon.png'>
+		<link rel="shortcut icon" href='https://www.jamf.com/favicon.ico' type="image/x-icon">
+		<link rel="icon" href='https://www.jamf.com/favicon.ico' type="image/x-icon">
+		<link rel="mask-icon" href='https://www.jamf.com/pin-mask.svg' color="#5b6983">
+		
+		
+		<style id="bodyText">body{display:none !important;}</style>
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	
+	<body>
+		
+		
+
+
+
+
+
+
+
+
+<a href="#page-content" class="sr-only sr-only-focusable skip-to-main-content">Skip to main content</a>
+
+<header class="jamf-nav--fixed" data-headroom data-offset="70">
+	<div class="jamf-nav__bar jamf-nav__bar--global">
+		<div data-analytics-track-links="Clicked Nav Link (Header)" class="jamf-nav__bar-content">
+		
+			
+			<nav class="jamf-nav__links">
+				<a class="jamf-nav__link jamf-nation-logo-nav__link" href="https://www.jamf.com/jamf-nation/">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 50">
+  						<g fill="none" fill-rule="evenodd">
+						<polygon fill="#929292"
+							points="280.981 12.713 284.29 12.713 284.29 38.831 281.187 38.831 267.121 18.624 267.053 18.624 267.053 38.831 263.743 38.831 263.743 12.713 266.846 12.713 280.912 32.92 280.981 32.92" />
+						<path fill="#929292"
+							d="M246.144738,36.563689 C251.488094,36.563689 256.522044,32.3701829 256.522044,26.184878 C256.522044,19.9987957 251.488094,15.8052896 246.144738,15.8052896 C240.800594,15.8052896 235.767431,19.9987957 235.767431,26.184878 C235.767431,32.3701829 240.800594,36.563689 246.144738,36.563689 M246.144738,12.7134146 C255.038785,12.7134146 260.038094,19.7243598 260.038094,26.184878 C260.038094,32.6453963 255.038785,39.6563415 246.144738,39.6563415 C237.250691,39.6563415 232.251381,32.6453963 232.251381,26.184878 C232.251381,19.7243598 237.250691,12.7134146 246.144738,12.7134146" />
+						<polygon fill="#929292"
+							points="225.166 38.831 228.475 38.831 228.475 12.713 225.166 12.713" />
+						<polygon fill="#929292"
+							points="211.246 15.806 204.696 15.806 204.696 12.713 221.106 12.713 221.106 15.806 214.555 15.806 214.555 38.831 211.246 38.831" />
+						<path fill="#929292"
+							d="M193.965331,17.04375 L189.00145,29.8621646 L198.929213,29.8621646 L193.965331,17.04375 Z M200.066851,32.7487957 L187.863812,32.7487957 L185.484613,38.8314787 L181.864641,38.8314787 L192.5175,12.7134146 L195.413163,12.7134146 L206.066022,38.8314787 L202.44605,38.8314787 L200.066851,32.7487957 Z" />
+						<polygon fill="#929292"
+							points="174.696 12.713 178.005 12.713 178.005 38.831 174.903 38.831 160.837 18.624 160.768 18.624 160.768 38.831 157.459 38.831 157.459 12.713 160.561 12.713 174.628 32.92 174.696 32.92" />
+						<path fill="#BFBFBF"
+							d="M142.893646,50 C142.676173,50 142.5,49.8318614 142.5,49.6243056 L142.5,0.375694419 C142.5,0.16813865 142.676173,0 142.893646,0 C143.11112,0 143.287293,0.16813865 143.287293,0.375694419 L143.287293,49.6243056 C143.287293,49.8318614 143.11112,50 142.893646,50" />
+						<path fill="#FFFFFF"
+							d="M120.355278 15.7027679C120.355278 11.3128571 123.286204 9.21955357 127.348889 9.01785714L127.348889 12.6419643 126.645278 12.6419643C124.848472 12.6419643 123.871759 14.1325893 123.871759 15.9848214L123.871759 18.8841071 127.193056 18.8841071 127.193056 22.0654464 123.871759 22.0654464 123.871759 39.8645536 120.355278 39.8645536 120.355278 22.0654464 117.268519 22.0654464 117.268519 18.8841071 120.355278 18.8841071 120.355278 15.7027679zM108.027917 27.2782143C108.027917 23.6541071 105.996574 22.0429464 103.574074 22.0429464 100.643148 22.0429464 98.4559722 23.9353571 98.4559722 27.4397321L98.4559722 40.1241071 94.9394907 40.1241071 94.9394907 27.2782143C94.9394907 23.6541071 92.9081481 22.0429464 90.4856481 22.0429464 87.5555093 22.0429464 85.3675463 23.9353571 85.3675463 27.4397321L85.3675463 40.1241071 81.8518519 40.1241071 81.8518519 19.1436607 85.3675463 19.1436607 85.3675463 21.6403571 85.445463 21.6403571C86.3836111 19.5060714 88.9225926 18.6607143 91.0719907 18.6607143 93.1418981 18.6607143 95.4085648 19.2240179 97.0888889 22.2848214 98.3387037 19.6266071 101.034306 18.6607143 103.729907 18.6607143 108.10662 18.6607143 111.544398 21.3583036 111.544398 26.875625L111.544398 40.1241071 108.027917 40.1241071 108.027917 27.2782143zM65.3728704 29.0500893C61.0748611 29.0500893 59.6298611 31.184375 59.6298611 33.2383036 59.6298611 35.2922321 61.0748611 37.4265179 65.3728704 37.4265179 69.6708796 37.4265179 71.1166667 35.2922321 71.1166667 33.2383036 71.1166667 31.184375 69.6708796 29.0500893 65.3728704 29.0500893L65.3728704 29.0500893zM70.9993981 26.0704464C70.9993981 22.6070536 67.639537 21.8420536 64.9045833 21.8420536 62.9905093 21.8420536 61.1929167 22.325 59.2780556 23.2916964L57.7543519 20.271875C60.8411111 18.9427679 63.2628241 18.6607143 65.0997685 18.6607143 69.9841204 18.6607143 74.5158796 20.795 74.5158796 25.7883929L74.5158796 40.1241071 71.2339352 40.1241071 71.2339352 37.8692857C69.4363426 39.801875 67.4435648 40.6078571 64.747963 40.6078571 59.7864815 40.6078571 55.8796296 37.74875 55.8796296 33.0767857 55.8796296 29.2517857 59.0435185 25.86875 64.7093981 25.86875 66.8580093 25.86875 69.1238889 26.5132143 70.9993981 28.2449107L70.9993981 26.0704464zM49.2173611 9.82145604C50.5852315 9.81502747 51.6831481 10.9376168 51.6894444 12.347081 51.6957407 13.7565453 50.6072685 14.8887775 49.2393981 14.895206 47.8723148 14.9016346 46.7728241 13.7790453 46.7665278 12.369581 46.7610185 10.9601168 47.8494907 9.82788462 49.2173611 9.82145604L49.2173611 9.82145604zM47.4992593 19.0110989L51.0157407 18.9950275 51.1196296 42.6698489C51.1196296 48.1349382 47.6653241 49.9791346 43.7875926 49.9927953L42.5149537 49.9927953 42.5 46.5784203C43.4452315 46.6105632 43.775787 46.6105632 43.7993981 46.6105632 47.2434722 46.5840453 47.6047222 44.645831 47.6047222 42.8506525L47.4992593 19.0110989z" />
+						<path fill="#778EB1"
+							d="M26.4767355,10.374999 C22.1309076,10.374999 19.5628827,12.1823669 18.392822,16.0608222 C18.3951715,16.0530885 15.3658577,25.2979648 15.3658577,25.2979648 C14.2561013,28.3342191 12.4696833,29.5847599 9.20855019,29.5847599 L1.72768002,29.5847599 C0.772991924,29.5847599 0,30.3488504 0,31.2908162 L0,36.002192 C0,36.9039425 0.739315477,37.6340047 1.6524954,37.6340047 L32.0161194,37.6340047 C32.968458,37.6340047 33.7406667,36.8722343 33.7406667,35.9318152 L33.7406667,12.0168656 C33.7406667,11.1097014 32.995869,10.374999 32.0779901,10.374999 L26.4767355,10.374999 Z" />
+						<path fill="#778EB1"
+							d="M1.84672235,5.71249962 C0.827030873,5.71249962 1.77635684e-15,6.52917933 1.77635684e-15,7.5361083 L1.77635684e-15,20.1466949 C1.77635684e-15,21.1281026 0.805885197,21.9246747 1.79973196,21.9246747 L8.23584911,21.9246747 C11.1821466,21.9246747 15.2264529,21.326859 16.3377756,16.1607411 C16.3385588,16.1599677 17.4412666,10.9876628 18.0952162,7.92124703 C18.3387831,6.78129826 17.4569301,5.71249962 16.2774713,5.71249962 L1.84672235,5.71249962 Z" /></g>
+					</svg>
+				</a>
+				<a href="https://www.jamf.com/jamf-nation/discussions" id="nav-discussions" class="jamf-nav__link hidden-xs hidden-sm " role="tab">
+					<span>Discussions</span>
+				</a>
+				<a href="https://www.jamf.com/jamf-nation/feature-requests" id="nav-feature-requests" class="jamf-nav__link hidden-xs hidden-sm " role="tab">
+					<span>Feature&nbsp;Requests</span>
+				</a>
+				<a href="https://www.jamf.com/jamf-nation/articles" id="nav-articles" class="jamf-nav__link hidden-xs hidden-sm " role="tab">
+					<span>Knowledge&nbsp;Base</span>
+				</a>
+				<a href="https://www.jamf.com/jamf-nation/support/cases" id="nav-support" class="jamf-nav__link hidden-xs hidden-sm " role="tab">
+					<span>Support</span>
+				</a>
+				<a href="#" id="nav-more-show"
+					class="jamf-nav__link jamf-drawer-toggle jamf-drawer-toggle--show-state hidden-xs hidden-sm"
+					role="tab" data-parent=".jamf-nav__bar" data-target="#nav-more"
+					data-toggle="jamf-drawer" aria-controls="nav-more"
+					aria-expanded="false"> <span>More <i class="jcon-arrow-1-down"></i></span>
+				</a>
+			</nav>
+			
+			
+			<nav class="jamf-nav__links">
+				<a href="https://www.jamf.com/jamf-nation/search" id="jn-search-show" class="jamf-nav__link jamf-drawer-toggle"
+					role="tab" data-parent=".jamf-nav__bar" data-target="#nav-search"
+					data-toggle="jamf-drawer" aria-controls="nav-search"
+					aria-expanded="false">
+					<span>
+						<i class=" jcon-magnifier-1 jcon--large" role="presentation" aria-hidden="true" title="Search"></i>
+						<span class="sr-only">Search</span>
+					</span>
+				</a>
+
+				
+					
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="login-form" method="get" action="https://www.jamf.com/jamf-nation/login">
+	<input type="hidden" name="landingPage" value="/third-party-products/432/zoom"/>
+	<button id="btn-login" class="jamf-nav__link jamf-nav__link--btn hidden-xs hidden-sm">Log In</button>
+	
+</form>
+
+					
+				
+				
+				<a role="button" id="mobile-nav-btn" class="jamf-nav__link jamf-drawer-toggle hidden-md hidden-lg" data-parent=".jamf-nav__bar" data-target="#nav-mobile"
+					data-toggle="jamf-drawer" aria-controls="nav-search" aria-expanded="false">
+                    <span class="hamburger__lines" role="presentation" aria-hidden="true"></span>
+                    <span class="sr-only">Menu</span>
+                </a>
+			</nav>
+			
+		</div>
+	</div>
+	<div class="jamf-drawer-container">
+		<div id="jn-drawer" class="jamf-drawer shoved">
+
+			
+			<div id="nav-more" data-analytics-track-links="Clicked Nav Link (Drawer)" class="jamf-drawer__content hidden" role="tabpanel" aria-expanded="false" data-parent=".jamf-drawer">
+				<div class="container-fluid">
+                	<div class="row">
+                		<div class="col-sm-3">
+                			<h4 class="nav-more-section-title">RESOURCES</h4>
+							<nav class="nav-more-section-nav">
+								<ul>
+									<li><a id="nav-third-party-products" href="https://www.jamf.com/jamf-nation/third-party-products">Third-Party Products</a></li>
+									<li><a id="nav-scripts" href="https://www.jamf.com/jamf-nation/third-party-products/files/scripts">Scripts</a></li>
+									<li><a id="nav-extension-attributes" href="https://www.jamf.com/jamf-nation/third-party-products/files/extension-attributes">Extension Attributes</a></li>
+									<li><a id="nav-package-manifests" href="https://www.jamf.com/jamf-nation/third-party-products/files/package-manifests">Package Manifests</a></li>
+									<li><a id="nav-licensed-software-templates" href="https://www.jamf.com/jamf-nation/third-party-products/files/licensed-software-templates">Licensed Software Templates</a></li>
+									<li><a id="nav-managed-preference-manifests" href="https://www.jamf.com/jamf-nation/third-party-products/files/managed-preference-manifests">Managed Preference Manifests</a></li>
+								</ul>
+							</nav>
+                		</div>
+                		<div class="col-sm-3">
+                			<h4 class="nav-more-section-title">EVENTS</h4>
+							<nav class="nav-more-section-nav">
+								<ul>
+									<li>
+										<a id="nav-jnuc-2018" href="https://www.jamf.com/events/jamf-nation-user-conference/2018">JNUC 2018</a>
+                                        <ul>
+                                            <li><a id="nav-jnuc-sessions" href="https://www.jamf.com/resources/search/?filters=Videos%2CJamf%20Nation%20User%20Conference%202018">Session Videos</a></li>
+                                        </ul>
+									</li>
+									<li><a id="nav-user-groups" href="https://www.jamf.com/jamf-nation/events/user-groups">User Groups</a></li>
+									<li><a id="nav-jngf-events" href="https://www.jamf.com/jamf-nation/events/global-foundation/info">Global Foundation</a></li>
+								</ul>
+							</nav>
+                		</div>
+                		<div class="col-sm-3">
+                			<h4 class="nav-more-section-title">DOCUMENTATION</h4>
+							<nav class="nav-more-section-nav">
+								<ul>
+									<li><a id="nav-admin-guide" href='http://docs.jamf.com/jamf-pro/administrator-guide/index.html' class="external-link" target="_blank" rel="noopener">Jamf Pro Admin's Guide</a></li>
+									<li><a id="nav-docs" href='https://www.jamf.com/resources/product-documentation/' class="external-link" target="_blank" rel="noopener">All Product Documentation</a></li>
+									
+								</ul>
+							</nav>
+                		</div>
+                		<div class="col-sm-3">
+                			<h4 class="nav-more-section-title">OTHER</h4>
+							<nav class="nav-more-section-nav">
+								<ul>
+									<li><a id="nav-store" href="https://www.jamf.com/jamf-nation/store">Store</a></li>
+									<li><a id="nav-job-board" href="https://www.jamf.com/jamf-nation/jobs">Job Board</a></li>
+									<li><a id="nav-jamf-software" href='https://www.jamf.com'>Jamf</a></li>
+									
+								</ul>
+							</nav>
+                		</div>
+                	</div>
+                </div>
+			</div>
+			
+			
+			<div id="nav-search" class="jamf-drawer__content hidden" role="tabpanel" aria-expanded="false" data-parent=".jamf-drawer">
+				<div class="container-fluid">
+                	<div class="row">
+                		<div class="col-sm-12">
+                			<form action="https://www.jamf.com/jamf-nation/search" method="get">
+                				<div class="input-group">
+										<input type="search" name="query" id="jn-search-input" class="form-control" placeholder="Search Jamf Nation..."> <span
+										class="input-group-btn">
+										<button class="btn btn-primary" type="submit">Search</button>
+									</span>
+								</div>
+							</form>
+						</div>
+                	</div>
+                </div>
+			</div>
+
+            
+
+
+			
+			
+			
+			
+					
+			<div id="nav-mobile" class="jamf-drawer__content hidden hidden-md hidden-lg" role="tabpanel" aria-expanded="false" data-parent=".jamf-drawer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<nav data-analytics-track-links="Clicked Nav Link (Mobile)">
+								<ul class="nav navbar-nav">
+									
+										
+										
+											<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="login-form-mobile" method="get" action="https://www.jamf.com/jamf-nation/login">
+	<input type="hidden" name="landingPage" value="/third-party-products/432/zoom"/>
+	<button id="" class="">Log In</button>
+	
+</form>
+</li>
+										
+									
+									<li><a href="https://www.jamf.com/jamf-nation/discussions">Discussions</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/feature-requests">Feature Requests</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/articles">Knowledge Base</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/support">Support</a></li>
+								</ul>
+								<h4>Events</h4>
+								<ul class="nav navbar-nav">
+									<li><a href="https://www.jamf.com/events/jamf-nation-user-conference/2018">JNUC 2018</a></li>
+									<li class="jnuc-subnav"><a href="https://www.jamf.com/resources/search/?filters=Videos%2CJamf%20Nation%20User%20Conference%202018">Session Videos</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/events/user-groups">User Groups</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/events/global-foundation/info">Global Foundation</a></li>
+								</ul>
+								<h4>Resources</h4>
+								<ul class="nav navbar-nav">
+									<li><a href="https://www.jamf.com/jamf-nation/third-party-products">Third-Party Products</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/third-party-products/files/scripts">Scripts</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/third-party-products/files/extension-attributes">Extension Attributes</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/third-party-products/files/package-manifests">Package Manifests</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/third-party-products/files/licensed-software-templates">Licensed Software Templates</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/third-party-products/files/managed-preference-manifests">Managed Preference Manifests</a></li>
+								</ul>
+								<h4>Documentation</h4>
+								<ul class="nav navbar-nav">
+									<li><a href="http://docs.jamf.com/jamf-pro/administrator-guide/index.html" class="external-link" target="_blank" rel="noopener">Jamf Pro Admin's Guide</a></li>
+									<li><a href="https://www.jamf.com/resources/product-documentation/" class="external-link" target="_blank" rel="noopener">All Product Documentation</a></li>
+									
+								</ul>
+								<h4>Other</h4>
+								<ul class="nav navbar-nav">
+									<li><a href="https://www.jamf.com/jamf-nation/store">Store</a></li>
+									<li><a href="https://www.jamf.com/jamf-nation/jobs">Job Board</a></li>
+									<li><a href="https://www.jamf.com">Jamf</a></li>
+									
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</header>
+
+
+		
+
+
+    <div id="learn-more-banner-container">
+        
+        <div id="learn-more-banner" class="collapse" data-version="3">
+            <div id="learn-more-banner-content">
+                <div id="learn-more-banner-txt">
+                    Jamf Nation, hosted by <strong>Jamf</strong>, is the largest Apple IT management community in the world. Dialog with your fellow IT professionals, gain insight about Apple device deployments, share best practices and bounce ideas off each other. Join the conversation.
+                </div>
+                <div id="learn-more-banner-btn">
+                    <a href='https://www.jamf.com' target="_blank" rel="noopener">Learn more about Jamf</a>
+                </div>
+                <div id="learn-more-banner-close-btn">
+                    <a href="javascript:closeLearnMoreBanner();"><span class="jcon-close"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+		
+		<div id="page-content">
+			<div class="container-fluid">
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="buffer-bottom">
+    <a href="https://www.jamf.com/jamf-nation/third-party-products?page=Z">
+        <i class="jcon-arrow-1-left"></i> Back to Third-Party Products
+    </a>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-3">
+        
+<ul id="jn-left-nav" class="nav nav-pills nav-stacked">
+            
+
+
+
+
+
+
+
+<li role="presentation" class="active">
+    <a href="#info" id="info-link"
+       aria-controls="info" role="tab" data-toggle="tab">Product Info</a>
+</li>
+            
+
+
+
+
+
+
+
+<li role="presentation" >
+    <a href="#discussions" id="discussions-link"
+       aria-controls="discussions" role="tab" data-toggle="tab">Discussions (0)</a>
+</li>
+            
+
+
+
+
+
+
+
+<li role="presentation" >
+    <a href="#articles" id="articles-link"
+       aria-controls="articles" role="tab" data-toggle="tab">Articles (0)</a>
+</li>
+            
+
+
+
+
+
+
+
+<li role="presentation" >
+    <a href="#extensionAttributes" id="extensionAttributes-link"
+       aria-controls="extensionAttributes" role="tab" data-toggle="tab">Extension Attributes (0)</a>
+</li>
+            
+
+
+
+
+
+
+
+<li role="presentation" >
+    <a href="#packageManifests" id="packageManifests-link"
+       aria-controls="packageManifests" role="tab" data-toggle="tab">Package Manifests (0)</a>
+</li>
+            
+
+
+
+
+
+
+
+<li role="presentation" >
+    <a href="#licensedSoftware" id="licensedSoftware-link"
+       aria-controls="licensedSoftware" role="tab" data-toggle="tab">Licensed Software (0)</a>
+</li>
+            
+
+
+
+
+
+
+
+<li role="presentation" >
+    <a href="#scripts" id="scripts-link"
+       aria-controls="scripts" role="tab" data-toggle="tab">Scripts (0)</a>
+</li>
+            
+
+
+
+
+
+
+
+<li role="presentation" >
+    <a href="#managedPreferences" id="managedPreferences-link"
+       aria-controls="managedPreferences" role="tab" data-toggle="tab">Managed Preferences (0)</a>
+</li>
+        </ul>
+        <div class="left-nav-action-groups">
+            
+
+
+            <div class="left-nav-action-group">
+                
+                <a class="action-item" href="https://www.jamf.com/jamf-nation/discussions/new?for=tpp&amp;typeId=432"><i class="jcon-comments-2"></i> Start New Discussion</a>
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<a rel="popover" tabindex="0" class="post-action action-item share" data-toggle="popover" data-html="true" data-placement="top"
+   data-content="&lt;input type=&#039;text&#039; class=&#039;form-control&#039; value=&#039;https://www.jamf.com/jamf-nation/third-party-products/432/zoom&#039;&gt;
+
+&lt;div class=&#039;share-icons&#039;&gt;
+    &lt;a class=&#039;popup&#039; href=&#039;https://twitter.com/share?url=https://www.jamf.com/jamf-nation/third-party-products/432/zoom&amp;text=Jamf%20Nation:%20&amp;hashtags=jamfnation&#039; data-share-track-ga=&#034;twitter&#034;&gt;&lt;i class=&#039;jcon jcon-twitter&#039;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class=&#039;popup&#039; href=&#039;https://www.facebook.com/sharer/sharer.php?u=https://www.jamf.com/jamf-nation/third-party-products/432/zoom&#039; data-share-track-ga=&#034;facebook&#034;&gt;&lt;i class=&#039;jcon jcon-facebook&#039;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class=&#039;popup&#039; href=&#039;https://plus.google.com/share?url=https://www.jamf.com/jamf-nation/third-party-products/432/zoom&#039; data-share-track-ga=&#034;g-plus&#034;&gt;&lt;i class=&#039;jcon jcon-google-plus&#039;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class=&#039;popup&#039; href=&#039;http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.jamf.com/jamf-nation/third-party-products/432/zoom&amp;title=Zoom&#039; data-share-track-ga=&#034;linkedin&#034;&gt;
+        &lt;i class=&#039;jcon jcon-linkedin&#039;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&#039;mailto:?to=&amp;subject=Jamf%20Nation&amp;body=https://www.jamf.com/jamf-nation/third-party-products/432/zoom&#039; data-share-track-ga=&#034;email&#034;&gt;&lt;i class=&#039;jcon jcon-email&#039;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;" data-original-title="Share link to this Third Party Product">
+    <i class="jcon jcon-next-7"></i> <span class="">Share</span>
+</a>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        
+
+
+
+
+<div class="page-header">
+	<h1 id="page-title">Zoom</h1>
+	<div id="page-actions"></div>
+</div>
+
+        
+<div class="tab-content">
+            
+
+
+
+<div role="tabpanel" class="tab-pane active" id="info">
+    
+                <ul class="product-details list-unstyled">
+
+                    <li>
+                        <strong>Developer: </strong>
+                        <a href="https://www.jamf.com/jamf-nation/third-party-products/developers/200/zoom">
+                            ZOOM
+                        </a>
+                    </li>
+
+                    <li><strong>Current Version: </strong>4.3.59242.0310</li>
+
+                    
+                        <li>
+                            <strong>Product URL: </strong>
+                            <a href="http://zoom.us/" target="_blank" rel="noopener">http://zoom.us/</a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <strong>Download: </strong>
+                            <a href="http://zoom.us/download" target="_blank" rel="noopener">http://zoom.us/download</a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <strong>Latest Update: </strong>
+                            <a href="https://d11yldzmag5yn.cloudfront.net/prod/4.3.59242.0310/Zoom.pkg" target="_blank" rel="noopener">
+                                https://d11yldzmag5yn.cloudfront.net/prod/4.3.59242.0310/Zoom.pkg
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li><strong>Beta Version: </strong>Zoom Rooms for Conference Room 4.3.1 (555.0307)</li>
+                    
+
+                    
+                        <li>
+                            <strong>Beta URL: </strong>
+                            <a href="http://zoom.us/client/latest/ZoomRooms.pkg" target="_blank" rel="noopener">http://zoom.us/client/latest/ZoomRooms.pkg</a>
+                        </li>
+                    
+
+                    <li>
+                        <strong>Record Last Updated: </strong>
+                        <time datetime="2019-03-13T01:38:16Z"
+      data-pattern=""
+      data-zoneid=""
+      data-relativeformat="true"
+      date-converttimezone="true"
+      class=""></time>
+
+
+                        by
+                        
+
+
+
+
+
+
+
+	
+	
+		<a href="https://www.jamf.com/jamf-nation/users/3596/h3144-it">H3144-IT</a>
+	
+
+                    </li>
+                </ul>
+
+                
+            
+</div>
+
+            
+
+
+
+<div role="tabpanel" class="tab-pane " id="discussions">
+    
+                <div class="activity-feed">
+                    <div class="activity-wrap">
+                        <div id="discussion-feed"></div>
+                    </div>
+                </div>
+            
+</div>
+
+            
+
+
+
+<div role="tabpanel" class="tab-pane " id="articles">
+    
+                <div class="activity-feed">
+                    <div class="activity-wrap">
+                        <div id="article-feed"></div>
+                    </div>
+                </div>
+            
+</div>
+
+            
+
+
+
+<div role="tabpanel" class="tab-pane " id="extensionAttributes">
+    
+                <a class="btn btn-action" href="https://www.jamf.com/jamf-nation/third-party-products/432/file-upload?type=EXTENSION_ATTRIBUTE">
+                    <i class="fa fa-plus-square fa-lg"></i>Upload Extension Attribute
+                </a>
+
+                <div class="well well-small description">
+                    <p>Extension attributes are custom fields that allow you to collect almost any piece of attribute data from a computer.</p>
+                    <p>Find out more about extension attributes on the <a href="https://www.jamf.com/jamf-nation/third-party-products/files/extension-attributes">extension attributes page</a>.</p>
+                </div>
+
+                <div class="activity-feed">
+                    <div class="activity-wrap">
+                        <div id="extension-attribute-feed">
+                            
+                                
+                                
+                                    <h4>There are no extension attributes for Zoom</h4>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+</div>
+
+            
+
+
+
+<div role="tabpanel" class="tab-pane " id="packageManifests">
+    
+                <a class="btn btn-action" href="https://www.jamf.com/jamf-nation/third-party-products/432/file-upload?type=PACKAGE_MANIFEST">
+                    <i class="fa fa-plus-square fa-lg"></i>Upload Package Manifest
+                </a>
+
+                <div class="well well-small description">
+                    <p>Package manifests allow Composer to build packages from software that is already installed without taking snapshots.</p>
+                    <p>Find out more about package manifests on the <a href="https://www.jamf.com/jamf-nation/third-party-products/files/package-manifests">package manifests page</a>.</p>
+                </div>
+
+                <div class="activity-feed">
+                    <div class="activity-wrap">
+                        <div id="package-manifest-feed">
+                            
+                                
+                                
+                                    <h4>There are no package manifests for Zoom</h4>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+</div>
+
+            
+
+
+
+<div role="tabpanel" class="tab-pane " id="licensedSoftware">
+    
+                <a class="btn btn-action" href="https://www.jamf.com/jamf-nation/third-party-products/432/file-upload?type=LICENSED_SOFTWARE_TEMPLATE">
+                    <i class="fa fa-plus-square fa-lg"></i>Upload Licensed Software Template
+                </a>
+
+                <div class="well well-small description">
+                    <p>Licensed software records in Jamf Pro let you store information about the software licensed to your organization.</p>
+                    <p>Find out more about licensed software templates on the <a href="https://www.jamf.com/jamf-nation/third-party-products/files/licensed-software-templates">licensed software templates page</a>.</p>
+                </div>
+
+                <div class="activity-feed">
+                    <div class="activity-wrap">
+                        <div id="licensed-software-feed">
+                            
+                                
+                                
+                                    <h4>There are no licensed software templates for Zoom</h4>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+</div>
+
+            
+
+
+
+<div role="tabpanel" class="tab-pane " id="scripts">
+    
+                <a class="btn btn-action" href="https://www.jamf.com/jamf-nation/third-party-products/432/file-upload?type=SCRIPT">
+                    <i class="fa fa-plus-square fa-lg"></i>Upload Script
+                </a>
+
+                <div class="well well-small description">
+                    <p>Scripts can be executed on managed computers using a Policy or Jamf Remote. Most scripts also work with other management tools.</p>
+                    <p>Find out more about scripts on the <a href="https://www.jamf.com/jamf-nation/third-party-products/files/scripts">scripts page</a>.</p>
+                </div>
+
+                <div class="activity-feed">
+                    <div class="activity-wrap">
+                        <div id="script-feed">
+                            
+                                
+                                
+                                    <h4>There are no scripts for Zoom</h4>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+</div>
+
+            
+
+
+
+<div role="tabpanel" class="tab-pane " id="managedPreferences">
+    
+                <a class="btn btn-action" href="https://www.jamf.com/jamf-nation/third-party-products/432/file-upload?type=MANAGED_PREFERENCE_MANIFEST">
+                    <i class="fa fa-plus-square fa-lg"></i>Upload Managed Preference Manifest
+                </a>
+
+                <div class="well well-small description">
+                    <p>Managed Preference (MCX) manifests allow you to enforce settings on managed computers with Jamf Pro. These files also work with Workgroup Manager.</p>
+                    <p>Find out more about managed preference manifests on the <a href="https://www.jamf.com/jamf-nation/third-party-products/files/managed-preference-manifests">managed preference manifests page</a>.</p>
+                </div>
+
+                <div class="activity-feed">
+                    <div class="activity-wrap">
+                        <div id="managed-preference-feed">
+                            
+                                
+                                
+                                    <h4>There are no managed preference manifests for Zoom</h4>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="flagPostOpen" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <form id="flagPostForm" action="/jamf-nation/third-party-products/432/zoom" method="post">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="flagTitle"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="flagType" id="type-Spam" value="Spam" checked>
+                            <strong>Spam</strong><br>
+                            This is an advertisement&mdash;it is not useful or relevant
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="flagType" id="type-Inappropriate" value="Inappropriate">
+                            <strong>Inappropriate</strong><br>
+                            This is offensive or in violation of our <a href="https://www.jamf.com/jamf-nation/etiquette.html">Community Etiquette</a>.
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" name="type" value=""/>
+                    <input type="hidden" name="typeId" value=""/>
+                    <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+                    <button id="sendFlagPost" class="btn btn-primary" type="submit"></button>
+                </div>
+
+            <div>
+<input type="hidden" name="_csrf" value="f5fc8de6-ef1f-4abf-9914-6b75846a4946" />
+</div></form>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="flagResponse" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="flagSuccess" class="alert alert-success" style="display:none;">
+                    <strong>Success!</strong> This <span class="msgText"></span> has been flagged.
+                </div>
+                <div id="flagError" class="alert alert-danger" style="display:none;">
+                    <strong>Error!</strong> This <span class="msgText"></span> could not be flagged.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="activity hidden" data-activty-template>
+    <div class="activity-left">
+        <img class="activity-icon" src=""/>
+        <span class="activity-number"></span>
+    </div>
+    <div class="activity-center">
+        <h4 class="activity-title"><a href=""></a></h4>
+        <span class="meta" style="display: none;">
+            <strong>Last Response:</strong>
+            <time datetime=""
+      data-pattern=""
+      data-zoneid=""
+      data-relativeformat="true"
+      date-converttimezone="true"
+      class=""></time>
+
+
+            by
+            <a href=""></a>
+        </span>
+        <span class="activity-snippet" style="display: none;"></span>
+    </div>
+    <div class="activity-right">
+        <span class="user-info" style="display: none;">
+            <strong>Posted:</strong>
+            <time datetime=""
+      data-pattern=""
+      data-zoneid=""
+      data-relativeformat="true"
+      date-converttimezone="true"
+      class=""></time>
+
+
+            by
+            <a href=""></a> <img class="user-avatar" src=""/>
+        </span>
+    </div>
+</div>
+
+<script>
+	$(function() {
+		Follows.initializeFollowBtn();
+		Share.initialize();
+		Flag.initialize();
+
+		var template = $('[data-activty-template]');
+		Discussion.initialize($('#discussion-feed'), template, '/discussions/third-party-products/432');
+		Article.initialize($('#article-feed'), template, '/articles/third-party-products/432');
+	});
+</script>
+
+
+				
+
+				
+			</div>
+		</div>
+		
+		
+		
+
+
+
+<footer data-analytics-track-links="Clicked Nav Link (Footer)">
+	<div class="container">
+		<div class="footer-left">
+			<ul>
+				<li><a href="https://www.jamf.com/jamf-nation/etiquette">Community Etiquette</a></li>
+				<li><a href="https://www.jamf.com/jamf-nation/jobs">Job Board</a></li>
+				<li><a href="https://www.jamf.com/jamf-nation/events/user-groups">User Groups</a></li>
+				<li><a href="https://www.jamf.com/jamf-nation/reuse">Device Reuse Program</a></li>
+			</ul>
+		</div>
+		<div class="footer-right">
+			<ul>
+				<li>All contents © copyright 2002-Fri Apr 12 18:30:08 CDT 2019 <a href='https://www.jamf.com'>Jamf</a>. All rights reserved.</li>
+				<li><a href='https://www.jamf.com/privacy-policy'>Privacy Policy</a></li>
+				<li><a href='https://www.jamf.com/copyright-notice'>Copyright Notice</a></li>
+				<li><a href='https://www.jamf.com/terms-of-use'>Terms of Service</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+	
+
+
+		
+		
+		<script>
+			if (self === top) {
+				var bodyText = document.getElementById("bodyText");
+				bodyText.parentNode.removeChild(bodyText);
+			} else {
+				top.location = self.location;
+			}
+
+			var jnContextPath = "\x2Fjamf\x2Dnation";
+			var currentBuild = "201904101859";
+			var analyticsId = "ppHsysQS0OJ0Kd1yZ2DsPirOVJxcyqGI";
+
+			var CONFIG = {
+				csrfToken: 'f5fc8de6-ef1f-4abf-9914-6b75846a4946',
+                stripeToken: 'pk_live_FhPWPspBGCOynTA79ESEZnAo'
+            };
+		</script>
+
+		
+			<script>
+				$(function() {
+					JnKn.initialize(jnContextPath);
+				});
+			</script>
+		
+
+		<script src="https://www.jamf.com/jamf-nation/js/cookie.js?v=201904101859" type="text/javascript"></script>
+		
+
+
+	</body>
+</html>
